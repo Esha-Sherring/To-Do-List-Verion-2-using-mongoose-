@@ -8,7 +8,7 @@ const _= require("lodash");
 const app = express();
 
 app.set('view engine', 'ejs');
-
+//Deployment ready
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 mongoose.connect("mongodb+srv://esha_sherring:<password>@esha.kxejf.mongodb.net/todolistDB?retryWrites=true&w=majority",{useNewUrlParser: true});
